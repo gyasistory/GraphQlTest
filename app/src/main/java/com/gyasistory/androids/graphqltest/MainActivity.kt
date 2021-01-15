@@ -25,7 +25,8 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
             .normalizedCache(sqlNormalizedCacheFactory)
             .build()
 
-        apolloClient.query(FeedResultsQuery.builder().build()).enqueue(object : ApolloCall.Callback<FeedResultsQuery.Data>() {
+        apolloClient.query(FeedResultsQuery.builder().build())
+            .enqueue(object : ApolloCall.Callback<FeedResultsQuery.Data>() {
             override fun onResponse(response: Response<FeedResultsQuery.Data>) {
 //                response.data?.characters?.results()?.forEach {
 //                    Log.i(TAG, it.image ?: "")
