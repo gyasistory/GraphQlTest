@@ -18,25 +18,25 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 //        val okHttpClient = OkHttpClient.Builder().build()
-        val sqlNormalizedCacheFactory = SqlNormalizedCacheFactory(this, "test.db")
-
-        val apolloClient = ApolloClient.builder()
-            .serverUrl("https://rickandmortyapi.com/graphql")
-            .normalizedCache(sqlNormalizedCacheFactory)
-            .build()
-
-        apolloClient.query(FeedResultsQuery.builder().build())
-            .enqueue(object : ApolloCall.Callback<FeedResultsQuery.Data>() {
-            override fun onResponse(response: Response<FeedResultsQuery.Data>) {
+//        val sqlNormalizedCacheFactory = SqlNormalizedCacheFactory(this, "test.db")
+//
+//        val apolloClient = ApolloClient.builder()
+//            .serverUrl("https://rickandmortyapi.com/graphql")
+//            .normalizedCache(sqlNormalizedCacheFactory)
+//            .build()
+//
+//        apolloClient.query(FeedResultsQuery.builder().build())
+//            .enqueue(object : ApolloCall.Callback<FeedResultsQuery.Data>() {
+//            override fun onResponse(response: Response<FeedResultsQuery.Data>) {
 //                response.data?.characters?.results()?.forEach {
 //                    Log.i(TAG, it.image ?: "")
 //                }
-            }
-
-            override fun onFailure(e: ApolloException) {
-                TODO("Not yet implemented")
-            }
-
-        })
+//            }
+//
+//            override fun onFailure(e: ApolloException) {
+//                TODO("Not yet implemented")
+//            }
+//
+//        })
     }
 }
