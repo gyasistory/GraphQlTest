@@ -28,6 +28,7 @@ class CharacterFragment : Fragment() {
         viewModel.characters.observe(viewLifecycleOwner){
             it.forEach { character ->
                 Log.i(TAG, "onViewCreated: \n name: ${character.name()}")
+                //TODO update List with Character
             }
         }
     }
