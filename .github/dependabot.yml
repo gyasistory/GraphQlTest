@@ -5,8 +5,15 @@
 
 version: 2
 updates:
-  - package-ecosystem: "gradle" # See documentation for possible values
-    directory: "/app/src/main" # Location of package manifests
+  - package-ecosystem: gradle
+    directory: "/"
     schedule:
-      interval: "daily"
-      
+      interval: daily
+    open-pull-requests-limit: 10
+    reviewers:
+      - gyasistory
+    assignees:
+      - gyasistory
+    labels:
+      - dependencies
+      -
