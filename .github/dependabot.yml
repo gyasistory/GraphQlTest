@@ -16,3 +16,4 @@ updates:
       - gyasistory
     labels:
       - dependencies
+    milestone: 2
