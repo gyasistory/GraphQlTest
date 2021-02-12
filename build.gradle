@@ -2,10 +2,25 @@
 buildscript {
     ext {
         deps = [
-                dagger      : '2.30.1',
-                graph_ql    : '2.5.2',
-                moshi       : '1.11.0',
-                gtoSupport  : '3.7.1'
+                dagger          : '2.32',
+                graph_ql        : '2.5.2',
+                moshi           : '1.11.0',
+                gtoSupport      : '3.7.1',
+                materialDesign  : '1.3.0'
+        ]
+        deps.androidX = [
+                activity          : '1.2.0',
+                appCompat         : '1.2.0',
+                biometric         : '1.1.0',
+                cardView          : '1.0.0',
+                constraintLayout  : '2.0.4',
+                core              : '1.3.2',
+                fragment          : '1.3.0',
+                lifecycle         : '2.3.0',
+                multidex          : '2.0.1',
+                swipeRefreshLayout: '1.1.0',
+                test              : '1.3.0',
+                testJUnit         : '1.1.2',
         ]
     }
     ext.kotlin_version = "1.4.21"
