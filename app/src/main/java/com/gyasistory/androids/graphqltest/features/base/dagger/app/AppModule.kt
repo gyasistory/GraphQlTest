@@ -1,7 +1,8 @@
-package com.gyasistory.androids.graphqltest
+package com.gyasistory.androids.graphqltest.features.base.dagger.app
 
 import android.app.Application
 import android.content.Context
+import com.gyasistory.androids.graphqltest.GraphQLTestApp
 import com.gyasistory.androids.graphqltest.core.CoreModule
 import com.gyasistory.androids.graphqltest.features.FeaturesModule
 import dagger.Module

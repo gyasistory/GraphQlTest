@@ -1,4 +1,4 @@
-package com.gyasistory.androids.graphqltest
+package com.gyasistory.androids.graphqltest.features.base.dagger.base
 
 import android.content.Context
 
