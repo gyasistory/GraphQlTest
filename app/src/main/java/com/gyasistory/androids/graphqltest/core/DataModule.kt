@@ -42,4 +42,8 @@ class DataModule {
             .okHttpClient(okHttpClient)
             .build()
     }
+
+    interface ApolloDependencies {
+        fun apolloClient(): ApolloClient
+    }
 }

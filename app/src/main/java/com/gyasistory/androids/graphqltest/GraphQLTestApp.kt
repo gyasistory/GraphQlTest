@@ -1,6 +1,8 @@
 package com.gyasistory.androids.graphqltest
 
 import androidx.appcompat.app.AppCompatDelegate
+import com.gyasistory.androids.graphqltest.features.base.dagger.app.AppModule
+import com.gyasistory.androids.graphqltest.features.base.dagger.base.AppComponent
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 
