@@ -22,4 +22,4 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build --parallel
     - name: Check with Gradle
-      run: ./gradlew check --parallel
+      run: ./gradlew assemble check --parallel
