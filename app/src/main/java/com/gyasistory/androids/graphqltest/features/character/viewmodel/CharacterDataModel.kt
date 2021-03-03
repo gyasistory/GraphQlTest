@@ -18,7 +18,7 @@ class CharacterDataModel(application: Application) : AndroidViewModel(applicatio
         setData()
     }
 
-    private fun MutableLiveData<List<FeedResultsQuery.Result>>.setData() {
+    private fun setData() {
         apolloClient.query(FeedResultsQuery.builder().build()).watcher()
             .enqueueAndWatch(object : ApolloCall.Callback<FeedResultsQuery.Data>() {
                 override fun onFailure(e: ApolloException) {
