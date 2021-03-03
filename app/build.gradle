@@ -32,6 +32,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {
@@ -51,6 +54,7 @@ dependencies {
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:${deps.androidX.swipeRefreshLayout}"
     implementation "com.google.android.material:material:${deps.materialDesign}"
 
+    implementation "com.squareup.picasso:picasso:${deps.picasso}"
 
     implementation("com.apollographql.apollo:apollo-runtime:$graph_ql")
 
