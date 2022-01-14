@@ -13,7 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         android:name=".GraphQLTestApp">
 
-        <activity android:name="com.gyasistory.androids.graphqltest.MainActivity">
+        <activity
+            android:name="com.gyasistory.androids.graphqltest.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
