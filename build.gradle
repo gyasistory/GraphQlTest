@@ -24,7 +24,7 @@ buildscript {
                 testJUnit         : '1.1.2',
         ]
     }
-    ext.kotlin_version = "1.6.20"
+    ext.kotlin_version = "1.6.21"
     repositories {
         google()
         jcenter()
