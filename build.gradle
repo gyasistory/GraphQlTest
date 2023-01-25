@@ -7,7 +7,7 @@ buildscript {
                 moshi           : '1.14.0',
                 picasso         : '2.71828',
                 gtoSupport      : '3.7.1',
-                materialDesign  : '1.6.1'
+                materialDesign  : '1.8.0'
         ]
         deps.androidX = [
                 activity          : '1.4.0',
